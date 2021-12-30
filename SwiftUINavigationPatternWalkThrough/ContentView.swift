@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    // State Driven
+    @EnvironmentObject var stateManager: StateManager
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        TabView(selection: $stateManager.selection){
+            
+            FirstTabView()
+                .tabItem {
+                    Text("First")
+                }
+                .tag(1)
+            
+            SecondTabView()
+                .tabItem {
+                    Text("Second")
+                }
+                .tag(2)
+            
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

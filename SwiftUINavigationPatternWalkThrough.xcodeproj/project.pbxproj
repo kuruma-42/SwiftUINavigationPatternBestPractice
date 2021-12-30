@@ -11,6 +11,11 @@
 		0228B446277D718300BF8ECF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B445277D718300BF8ECF /* ContentView.swift */; };
 		0228B448277D718400BF8ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0228B447277D718400BF8ECF /* Assets.xcassets */; };
 		0228B44B277D718400BF8ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0228B44A277D718400BF8ECF /* Preview Assets.xcassets */; };
+		0228B45F277D79AE00BF8ECF /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B45E277D79AE00BF8ECF /* SecondTabView.swift */; };
+		0228B461277D79BB00BF8ECF /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B460277D79BB00BF8ECF /* FirstTabView.swift */; };
+		0228B463277D7B1500BF8ECF /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B462277D7B1500BF8ECF /* FirstDetailView.swift */; };
+		0228B465277D7EFC00BF8ECF /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B464277D7EFC00BF8ECF /* EmojiView.swift */; };
+		0228B469277D96FF00BF8ECF /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B468277D96FF00BF8ECF /* StateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		0228B445277D718300BF8ECF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0228B447277D718400BF8ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0228B44A277D718400BF8ECF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0228B45E277D79AE00BF8ECF /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
+		0228B460277D79BB00BF8ECF /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
+		0228B462277D7B1500BF8ECF /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
+		0228B464277D7EFC00BF8ECF /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		0228B468277D96FF00BF8ECF /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,13 @@
 		0228B442277D718300BF8ECF /* SwiftUINavigationPatternWalkThrough */ = {
 			isa = PBXGroup;
 			children = (
+				0228B45D277D797D00BF8ECF /* SecondTab */,
+				0228B45C277D796E00BF8ECF /* FirstTab */,
 				0228B443277D718300BF8ECF /* SwiftUINavigationPatternWalkThroughApp.swift */,
 				0228B445277D718300BF8ECF /* ContentView.swift */,
 				0228B447277D718400BF8ECF /* Assets.xcassets */,
 				0228B449277D718400BF8ECF /* Preview Content */,
+				0228B468277D96FF00BF8ECF /* StateManager.swift */,
 			);
 			path = SwiftUINavigationPatternWalkThrough;
 			sourceTree = "<group>";
@@ -65,6 +78,24 @@
 				0228B44A277D718400BF8ECF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0228B45C277D796E00BF8ECF /* FirstTab */ = {
+			isa = PBXGroup;
+			children = (
+				0228B460277D79BB00BF8ECF /* FirstTabView.swift */,
+				0228B462277D7B1500BF8ECF /* FirstDetailView.swift */,
+				0228B464277D7EFC00BF8ECF /* EmojiView.swift */,
+			);
+			path = FirstTab;
+			sourceTree = "<group>";
+		};
+		0228B45D277D797D00BF8ECF /* SecondTab */ = {
+			isa = PBXGroup;
+			children = (
+				0228B45E277D79AE00BF8ECF /* SecondTabView.swift */,
+			);
+			path = SecondTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0228B446277D718300BF8ECF /* ContentView.swift in Sources */,
+				0228B463277D7B1500BF8ECF /* FirstDetailView.swift in Sources */,
+				0228B45F277D79AE00BF8ECF /* SecondTabView.swift in Sources */,
+				0228B469277D96FF00BF8ECF /* StateManager.swift in Sources */,
 				0228B444277D718300BF8ECF /* SwiftUINavigationPatternWalkThroughApp.swift in Sources */,
+				0228B461277D79BB00BF8ECF /* FirstTabView.swift in Sources */,
+				0228B465277D7EFC00BF8ECF /* EmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

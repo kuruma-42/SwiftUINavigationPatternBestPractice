@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUINavigationPatternWalkThroughApp: App {
+    @StateObject var stateManager = StateManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(stateManager)
         }
     }
 }
