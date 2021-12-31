@@ -9,19 +9,10 @@ import SwiftUI
 
 struct FirstDetailView: View {
     @EnvironmentObject var stateManager : StateManager
-    let items : [String] = ["😍","😘","🥰","🙆‍♂️","👼", ]
     var body: some View {
         VStack(spacing: 30){
-            List( items, id: \.self) { item in
-                
-                NavigationLink(tag: item, selection: $stateManager.selectedItem) {
-                    EmojiView(item: item)
-                } label: {
-                    Text("\(item)")
-                }
-            }
-            .navigationTitle("First Detail View")
-            
+           
+            EmojiListView(selectedEmoji: $stateManager.selectedItem)
 
         }
     }

@@ -13,20 +13,40 @@ struct ContentView: View {
     
     var body: some View {
         
-        TabView(selection: $stateManager.selection){
-            
-            FirstTabView()
-                .tabItem {
-                    Text("First")
+        
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            TabView(selection: $stateManager.selection){
+                
+                FirstTabView()
+                    .tabItem {
+                        Text("First")
+                    }
+                    .tag(1)
+                
+                SecondTabView()
+                    .tabItem {
+                        Text("Second")
+                    }
+                    .tag(2)
+            }
+        } else {
+            // IPad Or Other Device 
+            NavigationView{
+                List{
+                    NavigationLink(tag: 1, selection: $stateManager.selectedListItem) {
+                        FirstBodyView()
+                    } label: {
+                        Text("First")
+                    }
+
+                    
+                    NavigationLink(tag: 2, selection: $stateManager.selectedListItem) {
+                        SecondTabView()
+                    } label: {
+                        Text("Second")
+                    }
                 }
-                .tag(1)
-            
-            SecondTabView()
-                .tabItem {
-                    Text("Second")
-                }
-                .tag(2)
-            
+            }
         }
     }
 }

@@ -16,6 +16,8 @@
 		0228B463277D7B1500BF8ECF /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B462277D7B1500BF8ECF /* FirstDetailView.swift */; };
 		0228B465277D7EFC00BF8ECF /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B464277D7EFC00BF8ECF /* EmojiView.swift */; };
 		0228B469277D96FF00BF8ECF /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B468277D96FF00BF8ECF /* StateManager.swift */; };
+		0228B46B277EAAE400BF8ECF /* EmojiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228B46A277EAAE400BF8ECF /* EmojiListView.swift */; };
+		028DFFA2277ED862007441F4 /* FirstBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028DFFA1277ED862007441F4 /* FirstBodyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		0228B462277D7B1500BF8ECF /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
 		0228B464277D7EFC00BF8ECF /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		0228B468277D96FF00BF8ECF /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		0228B46A277EAAE400BF8ECF /* EmojiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiListView.swift; sourceTree = "<group>"; };
+		028DFFA1277ED862007441F4 /* FirstBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBodyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				0228B460277D79BB00BF8ECF /* FirstTabView.swift */,
+				028DFFA1277ED862007441F4 /* FirstBodyView.swift */,
 				0228B462277D7B1500BF8ECF /* FirstDetailView.swift */,
 				0228B464277D7EFC00BF8ECF /* EmojiView.swift */,
+				0228B46A277EAAE400BF8ECF /* EmojiListView.swift */,
 			);
 			path = FirstTab;
 			sourceTree = "<group>";
@@ -169,10 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0228B446277D718300BF8ECF /* ContentView.swift in Sources */,
+				0228B46B277EAAE400BF8ECF /* EmojiListView.swift in Sources */,
 				0228B463277D7B1500BF8ECF /* FirstDetailView.swift in Sources */,
 				0228B45F277D79AE00BF8ECF /* SecondTabView.swift in Sources */,
 				0228B469277D96FF00BF8ECF /* StateManager.swift in Sources */,
 				0228B444277D718300BF8ECF /* SwiftUINavigationPatternWalkThroughApp.swift in Sources */,
+				028DFFA2277ED862007441F4 /* FirstBodyView.swift in Sources */,
 				0228B461277D79BB00BF8ECF /* FirstTabView.swift in Sources */,
 				0228B465277D7EFC00BF8ECF /* EmojiView.swift in Sources */,
 			);

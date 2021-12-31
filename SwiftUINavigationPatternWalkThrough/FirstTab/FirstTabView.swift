@@ -9,19 +9,11 @@ import SwiftUI
 
 struct FirstTabView: View {
 //    @State private var isDetailViewActive : Bool = false
-    @EnvironmentObject var stateManager : StateManager
+//    @EnvironmentObject var stateManager : StateManager
     
     var body: some View {
         NavigationView{
-            VStack{
-                Text("FirstTabView")
-                NavigationLink(isActive: $stateManager.firstDetailIsShown) {
-                    FirstDetailView()
-                } label: {
-                    Text("go")
-                }
-            }
-
+            FirstBodyView()
         }
     }
 }
